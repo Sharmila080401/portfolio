@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#070a1a">
+<meta name="description" content="Sharmila A/P Murugan — Software Engineer, Web & Automation Developer.">
+<title>Sharmila Murugan | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070a18;--panel:#0b1024;--panel2:#0d1530;--line:rgba(130,166,255,.19);--text:#f4f6ff;--muted:#a4aecb;--cyan:#61e7ff;--purple:#a66cff;--pink:#f078f6;--green:#8bffcc;--radius:22px;--shadow:0 20px 60px rgba(0,0,0,.28)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:radial-gradient(ellipse at 80% 0%,rgba(88,55,191,.2),transparent 36%),radial-gradient(ellipse at 0% 45%,rgba(0,160,255,.09),transparent 35%),var(--bg);color:var(--text);font-family:Manrope, sans-serif;line-height:1.6;overflow-x:hidden}body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.15;background-image:linear-gradient(rgba(125,150,255,.11) 1px,transparent 1px),linear-gradient(90deg,rgba(125,150,255,.11) 1px,transparent 1px);background-size:54px 54px;mask-image:linear-gradient(to bottom,black,transparent 80%)}a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}.container{width:min(1240px,calc(100% - 40px));margin:auto}.topbar{position:sticky;top:0;z-index:20;background:rgba(7,10,24,.82);backdrop-filter:blur(18px);border-bottom:1px solid rgba(130,166,255,.12)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-family:"Space Grotesk";font-size:1.3rem;font-style:italic;font-weight:700;letter-spacing:-1px}.brand span{color:var(--cyan)}.navlinks{display:flex;gap:25px;align-items:center}.navlinks a{font-size:.78rem;color:#c6cde4;transition:.25s}.navlinks a:hover,.navlinks a.active{color:var(--cyan)}.navsocial{display:flex;gap:12px;color:#c6cde4}.navsocial a{border:1px solid var(--line);width:32px;height:32px;display:grid;place-items:center;border-radius:10px;font-size:.8rem}.menu-btn{display:none;background:transparent;border:1px solid var(--line);color:white;border-radius:10px;padding:8px 12px}
+section{padding:76px 0;position:relative}.hero{min-height:640px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:40px;padding-top:64px;padding-bottom:72px}.eyebrow{display:inline-flex;align-items:center;gap:9px;font:500 .72rem "DM Mono";letter-spacing:1.6px;text-transform:uppercase;color:var(--cyan)}.pulse{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 13px var(--green)}h1,h2,h3,p{margin-top:0}h1{font:700 clamp(2.7rem,5.6vw,5.2rem)/1.02 "Space Grotesk";letter-spacing:-3px;margin:18px 0 20px}.gradient-text{background:linear-gradient(100deg,#70eaff 0%,#a58aff 50%,#f078f6 100%);-webkit-background-clip:text;background-clip:text;color:transparent}.role{font-size:1.02rem;color:#d8def2;margin-bottom:18px}.intro{max-width:560px;color:var(--muted);font-size:.96rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 24px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:999px;padding:12px 19px;font-size:.82rem;font-weight:800;border:1px solid var(--line);transition:transform .25s,box-shadow .25s,background .25s;cursor:pointer}.btn:hover{transform:translateY(-3px)}.btn-primary{background:linear-gradient(100deg,#a35dff,#5e7bff);color:white;border-color:transparent;box-shadow:0 8px 30px rgba(133,91,255,.25)}.btn-ghost{background:rgba(255,255,255,.025)}.social-row{display:flex;gap:18px;color:#c7d0e8;font-size:.78rem}.social-row a:hover{color:var(--cyan)}.hero-visual{height:480px;position:relative;display:grid;place-items:center;isolation:isolate}.orb{position:absolute;width:310px;height:310px;border-radius:50%;background:radial-gradient(circle at 35% 30%,rgba(110,232,255,.65),rgba(117,73,255,.28) 36%,rgba(7,10,24,.1) 68%);border:1px solid rgba(123,218,255,.42);box-shadow:0 0 60px rgba(97,135,255,.18),inset 0 0 45px rgba(166,108,255,.22);animation:float 7s ease-in-out infinite;z-index:-1}.orb:before,.orb:after{content:"";position:absolute;inset:-24px;border:1px solid rgba(97,231,255,.35);border-radius:50%;transform:rotateX(67deg) rotateZ(-24deg)}.orb:after{inset:-50px;transform:rotateX(67deg) rotateZ(28deg);border-color:rgba(166,108,255,.3)}.portrait-placeholder{width:235px;height:330px;border-radius:120px 120px 30px 30px;background:linear-gradient(150deg,#1e2d56,#12162d 65%,#26134a);border:1px solid rgba(164,202,255,.4);box-shadow:0 0 60px rgba(96,106,255,.25);display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}.portrait-placeholder:before,.portrait-placeholder:after{display:none}.profile-photo{width:100%;height:100%;object-fit:cover;object-position:center 25%;position:absolute;inset:0;opacity:.95}.portrait-label{position:absolute;z-index:2;bottom:0;left:0;right:0;text-align:center;padding:22px 4px 12px;background:linear-gradient(transparent,rgba(7,10,24,.9));font: .62rem "DM Mono";color:#dce5ff;letter-spacing:1px}.float-card{position:absolute;background:rgba(12,18,42,.85);border:1px solid rgba(116,157,255,.28);box-shadow:var(--shadow);border-radius:15px;padding:14px 16px;backdrop-filter:blur(16px);font: .72rem "DM Mono";color:#dce7ff}.float-card b{display:block;color:var(--cyan);font-weight:500;margin-bottom:7px}.float-card.code{left:0;bottom:45px;max-width:190px;line-height:1.9}.float-card.stack{right:0;top:55px;line-height:1.9}.float-card.status{right:0;bottom:50px;color:var(--green)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:28px}.section-number{font: .72rem "DM Mono";color:var(--purple);letter-spacing:1.5px}.section-head h2{font:700 clamp(1.8rem,3.2vw,2.7rem)/1.15 "Space Grotesk";margin:6px 0 0;letter-spacing:-1px}.section-head p{color:var(--muted);max-width:430px;margin:0;font-size:.88rem}.panel{background:linear-gradient(145deg,rgba(15,23,51,.94),rgba(8,13,30,.93));border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}.about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px}.about-copy{padding:34px}.about-copy p{color:var(--muted)}.mini-tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}.tag{font: .68rem "DM Mono";padding:7px 10px;border:1px solid var(--line);border-radius:999px;color:#cdd7f5;background:rgba(255,255,255,.025)}.quote-panel{padding:28px;display:flex;flex-direction:column;justify-content:space-between;min-height:270px;background:radial-gradient(circle at 100% 0%,rgba(164,108,255,.22),transparent 55%),linear-gradient(140deg,#111b3d,#0a1025)}.quote-mark{font:4rem Georgia;color:var(--purple);line-height:1}.quote-panel blockquote{font:600 1.35rem/1.35 "Space Grotesk";margin:10px 0 22px}.quote-panel small{color:var(--cyan);font: .7rem "DM Mono";letter-spacing:1px}.skills-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:22px}.skill-categories{padding:24px;display:flex;flex-direction:column;gap:10px}.skill-cat{display:flex;align-items:center;gap:12px;text-align:left;color:#d5def8;background:rgba(255,255,255,.02);border:1px solid transparent;border-radius:13px;padding:13px;cursor:pointer;transition:.2s}.skill-cat:hover,.skill-cat.active{border-color:rgba(97,231,255,.4);background:rgba(97,231,255,.07);color:white}.skill-icon{width:35px;height:35px;display:grid;place-items:center;border-radius:11px;background:linear-gradient(140deg,rgba(97,231,255,.18),rgba(166,108,255,.22));color:var(--cyan)}.skill-cat strong{display:block;font-size:.83rem}.skill-cat small{display:block;color:var(--muted);font-size:.69rem}.skill-detail{padding:28px;min-height:350px;display:flex;flex-direction:column;justify-content:center;background:radial-gradient(circle at 50% 30%,rgba(93,89,255,.17),transparent 45%)}.skill-detail h3{font:600 1.55rem "Space Grotesk"}.skill-detail p{color:var(--muted);font-size:.88rem}.skill-chips{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0 20px}.skill-chip{padding:9px 13px;border-radius:10px;background:#101a39;border:1px solid rgba(126,161,255,.2);font: .74rem "DM Mono";color:#dce8ff}.skill-note{font: .7rem "DM Mono";color:var(--cyan)}.project-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.project-card{padding:13px;transition:transform .25s,border-color .25s;cursor:pointer;display:flex;flex-direction:column;min-height:310px}.project-card:hover{transform:translateY(-6px);border-color:rgba(97,231,255,.55)}.project-thumb{height:130px;border-radius:13px;display:grid;place-items:center;position:relative;overflow:hidden;margin-bottom:16px;border:1px solid rgba(136,167,255,.2);background:linear-gradient(135deg,#15264a,#11142c)}.project-thumb:before{content:"";position:absolute;width:170px;height:170px;border:1px solid rgba(97,231,255,.2);border-radius:50%;box-shadow:0 0 30px rgba(97,231,255,.1)}.project-thumb .symbol{font:700 2.2rem "Space Grotesk";color:var(--cyan);text-shadow:0 0 22px rgba(97,231,255,.5);z-index:1}.project-thumb.purple{background:linear-gradient(135deg,#28144a,#101a39)}.project-thumb.purple .symbol{color:#d5a3ff}.project-thumb.pink{background:linear-gradient(135deg,#391a50,#15132f)}.project-thumb.pink .symbol{color:#ff9af3}.project-thumb.green{background:linear-gradient(135deg,#123b42,#111a35)}.project-thumb.green .symbol{color:#8bffcc}.project-meta{font: .64rem "DM Mono";color:var(--cyan);text-transform:uppercase;letter-spacing:1px}.project-card h3{font:600 1rem/1.3 "Space Grotesk";margin:7px 0}.project-card p{font-size:.76rem;color:var(--muted);margin-bottom:14px}.project-bottom{margin-top:auto;display:flex;justify-content:space-between;align-items:center;font-size:.74rem;color:#d8e2ff}.arrow{color:var(--cyan);font-size:1.1rem}.experience-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:22px}.bosch-art{min-height:340px;padding:26px;display:flex;flex-direction:column;justify-content:space-between;background:radial-gradient(circle at 30% 25%,rgba(97,231,255,.18),transparent 45%),linear-gradient(145deg,#15213f,#0a1024)}.bosch-logo{font:800 1.7rem "Space Grotesk";letter-spacing:2px;color:#ff5964}.bosch-logo span{color:white;font-size:.7rem;display:block;letter-spacing:4px}.bosch-art .big-year{font:700 4rem "Space Grotesk";color:rgba(220,230,255,.14);align-self:end}.experience-list{padding:26px}.experience-list h3{font:600 1.25rem "Space Grotesk"}.experience-list .date{font: .7rem "DM Mono";color:var(--cyan)}.experience-list p{color:var(--muted);font-size:.84rem}.responsibility{display:grid;grid-template-columns:35px 1fr;gap:12px;margin-top:18px}.resp-icon{width:32px;height:32px;display:grid;place-items:center;border:1px solid var(--line);border-radius:10px;color:var(--cyan)}.responsibility strong{font-size:.84rem;display:block}.responsibility small{font-size:.75rem;color:var(--muted)}.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.edu-panel,.achievement-panel{padding:27px}.edu-item{padding:0 0 24px 24px;margin-left:8px;border-left:1px solid rgba(97,231,255,.35);position:relative}.edu-item:last-child{padding-bottom:0}.edu-item:before{content:"";position:absolute;left:-6px;top:4px;width:11px;height:11px;border-radius:50%;background:var(--bg);border:2px solid var(--cyan);box-shadow:0 0 12px rgba(97,231,255,.35)}.edu-item h3{font:600 1rem "Space Grotesk";margin-bottom:5px}.edu-item p{font-size:.8rem;color:var(--muted);margin-bottom:5px}.edu-item small{font: .68rem "DM Mono";color:var(--cyan)}.achievement{display:flex;gap:13px;margin:18px 0}.achievement-icon{flex:0 0 37px;height:37px;border-radius:12px;display:grid;place-items:center;background:rgba(166,108,255,.13);color:#d6b6ff}.achievement strong{display:block;font-size:.84rem}.achievement small{color:var(--muted);font-size:.75rem}.terminal-layout{display:grid;grid-template-columns:1.2fr .8fr;gap:22px}.terminal{padding:0;background:#050916;border:1px solid rgba(97,231,255,.25);border-radius:16px;overflow:hidden}.terminal-top{height:39px;background:#0d1429;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:7px;padding:0 14px;font: .68rem "DM Mono";color:#9eabc9}.dot{width:8px;height:8px;border-radius:50%;background:#ff6e86}.dot:nth-child(2){background:#ffcf70}.dot:nth-child(3){background:#8bffcc}.terminal-body{padding:20px;font: .76rem/1.9 "DM Mono";min-height:260px;color:#aebde1}.terminal-body .green{color:var(--green)}.terminal-body .cyan{color:var(--cyan)}.terminal-body .purple{color:#c5a0ff}.terminal-form{display:flex;gap:8px;margin-top:12px}.terminal-form span{color:var(--green)}.terminal-form input{min-width:0;flex:1;background:transparent;border:0;outline:0;color:white;font:inherit}.terminal-form button{background:transparent;border:0;color:var(--cyan);cursor:pointer}.terminal-side{padding:28px;display:flex;flex-direction:column;justify-content:center;background:radial-gradient(circle at 100% 100%,rgba(166,108,255,.22),transparent 60%),#0c1228}.terminal-side h3{font:600 1.5rem "Space Grotesk"}.terminal-side p{font-size:.85rem;color:var(--muted)}.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:22px}.contact-info,.contact-form{padding:28px}.contact-info h3,.contact-form h3{font:600 1.2rem "Space Grotesk"}.contact-info p{font-size:.83rem;color:var(--muted)}.contact-link{display:flex;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid rgba(130,166,255,.1);font-size:.8rem}.contact-link b{width:32px;height:32px;display:grid;place-items:center;border-radius:10px;background:rgba(97,231,255,.09);color:var(--cyan)}.contact-link small{display:block;color:var(--muted);font-size:.7rem}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.contact-form label{display:block;font-size:.72rem;color:#c9d3ed;margin-bottom:12px}.contact-form input,.contact-form textarea{width:100%;margin-top:6px;background:#080e20;border:1px solid rgba(130,166,255,.2);border-radius:10px;padding:11px 12px;color:white;outline:none}.contact-form input:focus,.contact-form textarea:focus{border-color:var(--cyan)}.contact-form textarea{min-height:105px;resize:vertical}.footer{padding:25px 0;border-top:1px solid rgba(130,166,255,.12);font-size:.7rem;color:#818eaf}.footer-inner{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.footer-links{display:flex;gap:16px}.modal{position:fixed;inset:0;z-index:60;background:rgba(2,4,12,.78);backdrop-filter:blur(12px);display:none;place-items:center;padding:20px}.modal.open{display:grid}.modal-box{width:min(620px,100%);padding:30px;position:relative}.modal-close{position:absolute;top:16px;right:16px;border:1px solid var(--line);border-radius:9px;background:transparent;color:white;padding:6px 10px;cursor:pointer}.modal-box h3{font:700 1.7rem "Space Grotesk";padding-right:50px}.modal-box p{color:var(--muted);font-size:.9rem}.modal-box .mini-tags{margin-bottom:24px}.toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#101a35;border:1px solid var(--line);border-radius:12px;padding:12px 18px;font-size:.8rem;z-index:80;transition:.25s}.toast.show{opacity:1;transform:translate(-50%,0)}.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s}.reveal.visible{opacity:1;transform:none}@keyframes float{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-12px) rotate(2deg)}}
+@media(max-width:1000px){.navlinks{gap:13px}.navlinks a{font-size:.72rem}.navsocial{display:none}.project-grid{grid-template-columns:repeat(2,1fr)}.hero{gap:10px}.hero-visual{transform:scale(.9)}}@media(max-width:760px){.container{width:min(100% - 28px,600px)}.nav{height:66px}.menu-btn{display:block}.navlinks{display:none;position:absolute;top:66px;left:0;right:0;padding:18px 24px 22px;background:rgba(7,10,24,.97);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.navlinks.open{display:flex}.hero{grid-template-columns:1fr;padding-top:55px;min-height:auto}.hero-visual{height:380px;transform:none;grid-row:1}.hero-copy{grid-row:2}.orb{width:245px;height:245px}.portrait-placeholder{width:185px;height:260px}.portrait-placeholder:before{width:125px;height:125px;top:30px}.portrait-placeholder:after{width:175px;height:150px}.float-card.code{left:0;bottom:25px}.float-card.stack{right:0;top:25px}.float-card.status{right:0;bottom:28px}.about-grid,.skills-layout,.experience-grid,.edu-grid,.terminal-layout,.contact-grid{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}.project-grid{grid-template-columns:1fr 1fr}.project-card{min-height:300px}.project-thumb{height:110px}section{padding:54px 0}.about-copy,.quote-panel,.skill-detail,.experience-list,.edu-panel,.achievement-panel,.contact-info,.contact-form{padding:22px}}@media(max-width:460px){h1{font-size:2.7rem;letter-spacing:-1.8px}.hero-visual{height:330px}.float-card{font-size:.62rem;padding:10px}.float-card.code{max-width:145px}.float-card.stack{max-width:130px}.project-grid{grid-template-columns:1fr}.project-card{min-height:unset}.project-thumb{height:145px}.form-row{grid-template-columns:1fr}.social-row{flex-wrap:wrap}.quote-panel blockquote{font-size:1.15rem}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+/* =================================
+   MOBILE RESPONSIVE IMPROVEMENTS
+   ================================= */
+
+/* Tablets and smaller laptops */
+@media (max-width: 1000px) {
+
+    .container {
+        width: calc(100% - 32px);
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .about-grid,
+    .skills-layout,
+    .experience-grid,
+    .edu-grid,
+    .terminal-layout {
+        gap: 18px;
+    }
+
+    .hero {
+        gap: 20px;
+    }
+
+    h1 {
+        overflow-wrap: anywhere;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 760px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: calc(100% - 28px);
+    }
+
+    section {
+        padding: 45px 0;
+    }
+
+    /* Navigation */
+    .nav {
+        height: 64px;
+    }
+
+    .brand {
+        font-size: 1.1rem;
+    }
+
+    .menu-btn {
+        display: block;
+        min-width: 44px;
+        min-height: 44px;
+    }
+
+    .navlinks {
+        top: 64px;
+    }
+
+    .navlinks a {
+        font-size: 0.9rem;
+        padding: 5px 0;
+    }
+
+    /* Hero section */
+    .hero {
+        grid-template-columns: minmax(0, 1fr);
+        min-height: auto;
+        padding-top: 35px;
+        gap: 20px;
+    }
+
+    .hero-copy {
+        grid-row: 2;
+        min-width: 0;
+    }
+
+    .hero-visual {
+        grid-row: 1;
+        width: 100%;
+        height: 330px;
+        transform: none;
+        min-width: 0;
+    }
+
+    h1 {
+        font-size: clamp(2.2rem, 9vw, 3.2rem);
+        letter-spacing: -1.5px;
+        overflow-wrap: anywhere;
+    }
+
+    .intro,
+    .role {
+        font-size: 0.9rem;
+    }
+
+    .actions {
+        gap: 10px;
+    }
+
+    .btn {
+        max-width: 100%;
+        padding: 11px 15px;
+    }
+
+    .portrait-placeholder {
+        width: 175px;
+        height: 245px;
+    }
+
+    .orb {
+        width: 220px;
+        height: 220px;
+    }
+
+    .float-card {
+        font-size: 0.58rem;
+        padding: 9px;
+    }
+
+    .float-card.code {
+        left: 0;
+        bottom: 15px;
+        max-width: 125px;
+    }
+
+    .float-card.stack {
+        right: 0;
+        top: 15px;
+        max-width: 125px;
+    }
+
+    .float-card.status {
+        right: 0;
+        bottom: 18px;
+    }
+
+    /* Section headings */
+    .section-head {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .section-head h2 {
+        font-size: 1.9rem;
+        overflow-wrap: anywhere;
+    }
+
+    /* Stack content panels vertically */
+    .about-grid,
+    .skills-layout,
+    .experience-grid,
+    .edu-grid,
+    .terminal-layout {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .about-copy,
+    .quote-panel,
+    .skill-categories,
+    .skill-detail,
+    .experience-list,
+    .edu-panel,
+    .achievement-panel,
+    .terminal-side {
+        padding: 20px;
+        min-width: 0;
+    }
+
+    /* Project cards */
+    .project-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 16px;
+    }
+
+    .project-card {
+        min-width: 0;
+        min-height: auto;
+        padding: 14px;
+    }
+
+    .project-thumb {
+        height: 175px;
+    }
+
+    .mini-tags,
+    .skill-chips {
+        gap: 7px;
+    }
+
+    .tag,
+    .skill-chip {
+        overflow-wrap: anywhere;
+    }
+
+    /* Developer console */
+    .terminal-body {
+        padding: 12px;
+        font-size: 0.7rem;
+        overflow-wrap: anywhere;
+    }
+
+    .terminal-form {
+        min-width: 0;
+        gap: 5px;
+    }
+
+    .terminal-form input {
+        width: 100%;
+    }
+
+    .terminal-form button {
+        flex-shrink: 0;
+    }
+
+    /* Project details popup */
+    .modal {
+        padding: 12px;
+    }
+
+    .modal-box {
+        width: 100%;
+        max-height: 85dvh;
+        overflow-y: auto;
+        padding: 22px;
+    }
+
+    .modal-box h3 {
+        font-size: 1.35rem;
+    }
+
+    /* Footer */
+    .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Extra-small mobile screens */
+@media (max-width: 380px) {
+
+    .container {
+        width: calc(100% - 22px);
+    }
+
+    h1 {
+        font-size: 2rem;
+        letter-spacing: -1px;
+    }
+
+    .hero-visual {
+        height: 300px;
+    }
+
+    .portrait-placeholder {
+        width: 155px;
+        height: 220px;
+    }
+
+    .float-card.code {
+        max-width: 105px;
+    }
+
+    .float-card.stack {
+        max-width: 105px;
+    }
+
+    .float-card.status {
+        font-size: 0.5rem;
+    }
+
+    .section-head h2 {
+        font-size: 1.65rem;
+    }
+
+    .project-thumb {
+        height: 145px;
+    }
+}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="container nav">
+<a class="brand" href="#home">Welcome<span>👩‍💻</span></a>
+<nav class="navlinks" id="navlinks"><a href="#home" class="active">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#education">Education</a></nav>
+<button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">☰</button>
+</div></header>
+<main>
+<section class="hero container" id="home">
+<div class="hero-copy reveal">
+<div class="eyebrow"><span class="pulse"></span> SOFTWARE • WEB • AUTOMATION</div>
+<h1>Hi, I'm<br><span class="gradient-text">Sharmila Murugan</span></h1>
+<p class="role">Software Engineer&nbsp; | &nbsp;Web &amp; Automation Developer</p>
+<p class="intro">I turn ideas into functional solutions. I build web applications, automate workflows, and enjoy solving real-world problems with code.</p>
+<div class="actions"><a class="btn btn-primary" href="#projects">View My Projects <span>↗</span></a><a class="btn btn-ghost" href="Sharmila_CV.pdf" download>Download CV ↓</a></div>
+<div class="social-row"><a href="#projects">◎ Projects</a><a href="https://www.linkedin.com/in/sharmila-murugan-b81a6a2a5" target="_blank" rel="noreferrer">in LinkedIn</a></div>
+</div>
+<div class="hero-visual reveal" aria-label="Decorative digital developer illustration">
+<div class="orb"></div><div class="portrait-placeholder"><img src="sharmila-portrait.png" alt="Portrait of Sharmila A/P Murugan" class="profile-photo"><span class="portrait-label">SOFTWARE ENGINEER</span></div>
+<div class="float-card code"><b>while (curiosity) {</b> learn();<br>build();<br>improve();<br><b>}</b></div>
+<div class="float-card stack"><b>✦ TECH STACK</b> C# / Python<br>Java / HTML / CSS<br>JavaScript / SQL</div>
+<div class="float-card status">● SYSTEM ONLINE</div>
+</div>
+</section>
+
+<section id="about"><div class="container reveal">
+<div class="section-head"><div><div class="section-number">01 / THE PERSON BEHIND THE CODE</div><h2>About Me</h2></div><p>Curiosity is where every good solution begins.</p></div>
+<div class="about-grid"><article class="panel about-copy"><p>I'm Sharmila, a Software Engineering student at Universiti Teknologi Malaysia (UTM), with experience in collaborative project development. I enjoy working at the intersection of technology, creativity, and problem-solving.</p><p>From web development to automation, I love turning complex ideas into simple, efficient, and user-friendly systems. During my degree internship at Robert Bosch in Penang, I applied software and automation skills to practical engineering workflows.</p><div class="mini-tags"><span class="tag">Problem Solver</span><span class="tag">Quick Learner</span><span class="tag">Team Player</span><span class="tag">Continuous Learner</span></div></article>
+<aside class="panel quote-panel"><div><div class="quote-mark">“</div><blockquote>Good things take time.<br>Great things take curiosity.</blockquote></div><small>MY DEVELOPER MINDSET&nbsp; / &nbsp;01</small></aside></div>
+</div></section>
+
+<section id="skills"><div class="container reveal"><div class="section-head"><div><div class="section-number">02 / MY TOOLKIT</div><h2>Skills Universe</h2></div><p>A combination of languages, frameworks, and tools that power my ideas. Select a category to explore.</p></div>
+<div class="skills-layout"><div class="panel skill-categories">
+<button class="skill-cat active" data-skill="web"><span class="skill-icon">⌘</span><span><strong>Web Development</strong><small>Interfaces &amp; web experiences</small></span></button>
+<button class="skill-cat" data-skill="programming"><span class="skill-icon">⌁</span><span><strong>Programming</strong><small>Logic &amp; application development</small></span></button>
+<button class="skill-cat" data-skill="database"><span class="skill-icon">◈</span><span><strong>Database</strong><small>Structured and reliable data</small></span></button>
+<button class="skill-cat" data-skill="automation"><span class="skill-icon">↯</span><span><strong>Automation</strong><small>Smarter, repeatable workflows</small></span></button>
+<button class="skill-cat" data-skill="tools"><span class="skill-icon">▧</span><span><strong>Tools &amp; Analytics</strong><small>Build, test, measure, improve</small></span></button>
+<button class="skill-cat" data-skill="professional"><span class="skill-icon">✳</span><span><strong>Professional Skills</strong><small>How I work with people</small></span></button>
+</div>
+<div class="panel skill-detail" id="skillDetail"><div class="eyebrow">SELECTED DISCIPLINE</div><h3>Web Development</h3><p>Designing and building clear, responsive experiences with practical front-end and back-end technologies.</p><div class="skill-chips"><span class="skill-chip">HTML5</span><span class="skill-chip">CSS3</span><span class="skill-chip">JavaScript</span><span class="skill-chip">PHP</span></div><div class="skill-note">✦ Always learning. Always improving.</div></div></div>
+</div></section>
+
+<section id="projects"><div class="container reveal"><div class="section-head"><div><div class="section-number">03 / SELECTED WORK</div><h2>Project Lab</h2></div><p>Real problems. Practical solutions. Thoughtful engineering.</p></div>
+<div class="project-grid">
+<article class="panel project-card" tabindex="0" role="button" data-project="excel"><div class="project-thumb"><span class="symbol">▦</span></div><div class="project-meta">01 / Bosch · Desktop automation</div><h3>Excel Automation System</h3><p>Automates TPCN folder data extraction and organises records in a SQLite database.</p><div class="mini-tags"><span class="tag">C#</span><span class="tag">SQLite</span><span class="tag">WinForms</span></div><div class="project-bottom"><span>View Details</span><span class="arrow">↗</span></div></article>
+<article class="panel project-card" tabindex="0" role="button" data-project="travel"><div class="project-thumb green"><span class="symbol">↯</span></div><div class="project-meta">02 / Bosch · Workflow</div><h3>Travel Pre-Approval Automation</h3><p>Processes pre-approval emails and centralises request records for departmental review.</p><div class="mini-tags"><span class="tag">Power Automate</span><span class="tag">Excel</span></div><div class="project-bottom"><span>View Details</span><span class="arrow">↗</span></div></article>
+<article class="panel project-card" tabindex="0" role="button" data-project="christmas"><div class="project-thumb pink"><span class="symbol">✧</span></div><div class="project-meta">03 / Bosch · Event website</div><h3>Christmas Wishes Website</h3><p>An internal event website with live comments, likes, anonymous participation, and auto-refresh.</p><div class="mini-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div><div class="project-bottom"><span>View Details</span><span class="arrow">↗</span></div></article>
+<article class="panel project-card" tabindex="0" role="button" data-project="powerbi"><div class="project-thumb purple"><span class="symbol">▥</span></div><div class="project-meta">04 / Bosch · Reporting support</div><h3>Power BI &amp; Fabric Support</h3><p>Supported Power BI workspace access by resolving a capacity-related licensing issue.</p><div class="mini-tags"><span class="tag">Power BI</span><span class="tag">Fabric</span></div><div class="project-bottom"><span>View Details</span><span class="arrow">↗</span></div></article>
+<article class="panel project-card" tabindex="0" role="button" data-project="mjiit"><div class="project-thumb green"><span class="symbol">⌘</span></div><div class="project-meta">05 / Academic project</div><h3>MJIIT Academic Counter System</h3><p>A JavaFX desktop queue-management system using MySQL and MVC architecture.</p><div class="mini-tags"><span class="tag">JavaFX</span><span class="tag">MySQL</span><span class="tag">MVC</span></div><div class="project-bottom"><span>View Details</span><span class="arrow">↗</span></div></article>
+<article class="panel project-card" tabindex="0" role="button" data-project="focusflow"><div class="project-thumb purple"><span class="symbol">◷</span></div><div class="project-meta">06 / Mobile app</div><h3>Focus Flow</h3><p>A Flutter and Firebase study app with a Pomodoro timer, to-do list, and deadline tracker.</p><div class="mini-tags"><span class="tag">Flutter</span><span class="tag">Firebase</span></div><div class="project-bottom"><span>View Details</span><span class="arrow">↗</span></div></article>
+<article class="panel project-card" tabindex="0" role="button" data-project="learnloop"><div class="project-thumb pink"><span class="symbol">∞</span></div><div class="project-meta">07 / Web app</div><h3>Learn Loop</h3><p>A web-based Pomodoro study platform for time management and task organisation.</p><div class="mini-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Firebase</span></div><div class="project-bottom"><span>View Details</span><span class="arrow">↗</span></div></article>
+<article class="panel project-card" tabindex="0" role="button" data-project="mrg"><div class="project-thumb"><span class="symbol">⌂</span></div><div class="project-meta">08 / Final-year project</div><h3>MRG Engineering Website</h3><p>A corporate web presence to present company information and engineering services.</p><div class="mini-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">PHP</span></div><div class="project-bottom"><span>View Details</span><span class="arrow">↗</span></div></article>
+</div></div></section>
+
+<section id="experience"><div class="container reveal"><div class="section-head"><div><div class="section-number">04 / INDUSTRY EXPERIENCE</div><h2>Industrial Experience</h2></div><p>Learning, building, and contributing in a real engineering environment.</p></div>
+<div class="experience-grid"><div class="panel bosch-art"><div><div class="bosch-logo">BOSCH<span>TECHNICAL FUNCTION</span></div><p style="color:var(--muted);max-width:250px;margin-top:28px">Degree Internship<br>Robert Bosch (M) Sdn. Bhd. · Penang</p></div><div class="big-year">2025—26</div></div>
+<div class="panel experience-list"><div class="date">22 SEP 2025 — 06 FEB 2026</div><h3>Junior Developer / Software Engineering Intern</h3><p>Completed a degree internship in Penang, contributing to software development, automation, event-web development, technical support, and reporting workflows.</p>
+<div class="responsibility"><span class="resp-icon">▦</span><div><strong>Software Development</strong><small>Developed a C# Windows Forms application with SQLite to automate TPCN folder data handling.</small></div></div>
+<div class="responsibility"><span class="resp-icon">↯</span><div><strong>Process Automation</strong><small>Built a Power Automate workflow to extract travel pre-approval details from emails and organise records.</small></div></div>
+<div class="responsibility"><span class="resp-icon">▥</span><div><strong>Power BI &amp; Fabric</strong><small>Helped resolve a Power BI workspace licensing/capacity issue by moving the TEF7 workspace subscription to Fabric capacity.</small></div></div>
+<div class="responsibility"><span class="resp-icon">◎</span><div><strong>Technical Support</strong><small>Supported asset information management, AOI setup and validation activities, and technical documentation.</small></div></div>
+<div class="responsibility"><span class="resp-icon">✳</span><div><strong>Problem Solving</strong><small>Practised troubleshooting, independent research, communication, and collaboration under real constraints.</small></div></div>
+</div></div></div></section>
+
+<section id="education"><div class="container reveal"><div class="section-head"><div><div class="section-number">05 / MY JOURNEY</div><h2>Education &amp; Achievements</h2></div><p>The foundations that keep me learning and moving forward.</p></div>
+<div class="edu-grid"><div class="panel edu-panel"><h3 style="font:600 1.15rem 'Space Grotesk';margin-bottom:24px">Education</h3>
+<div class="edu-item"><h3>Bachelor of Computer Science (Software Engineering) with Honours</h3><p>Universiti Teknologi Malaysia (UTM)</p><small>2023 — 2027 (Expected)</small></div>
+<div class="edu-item"><h3>Diploma in Information Technology (Digital Technology)</h3><p>Politeknik Sultan Abdul Halim Mu’adzam Shah</p><small>2019 — 2023</small></div>
+<div class="edu-item"><h3>Languages</h3><p>English · Malay · Tamil</p></div></div>
+<div class="panel achievement-panel"><h3 style="font:600 1.15rem 'Space Grotesk';margin-bottom:22px">Highlights</h3>
+<div class="achievement"><span class="achievement-icon">✦</span><div><strong>Dean's List Award</strong><small>Academic achievement during diploma studies</small></div></div>
+<div class="achievement"><span class="achievement-icon">✦</span><div><strong>Excellent Student Award — Head of Department Medal</strong><small>Academic recognition listed in CV</small></div></div>
+<div class="achievement"><span class="achievement-icon">⌘</span><div><strong>Degree Internship — Bosch</strong><small>Applied software and automation skills in an industrial environment</small></div></div>
+<div class="achievement"><span class="achievement-icon">▧</span><div><strong>FYP — MRG Engineering Website</strong><small>Industrial Web Solutions for MRG Engineering</small></div></div>
+</div></div></div></section>
+
+<section id="console"><div class="container reveal"><div class="section-head"><div><div class="section-number">06 / EXPLORE DIFFERENTLY</div><h2>Developer Console</h2></div><p>Type a command to explore the portfolio. Try <code>help</code>.</p></div>
+<div class="terminal-layout"><div class="terminal"><div class="terminal-top"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span style="margin-left:8px">sharmila@portfolio — interactive shell</span></div><div class="terminal-body" id="terminalOutput"><div class="green">Welcome to Sharmila's portfolio terminal.</div><div>Type <span class="cyan">help</span> to see available commands.</div><form class="terminal-form" id="terminalForm"><span>sharmila@portfolio:~$</span><input id="terminalInput" aria-label="Terminal command" autocomplete="off" spellcheck="false"><button type="submit">RUN ↵</button></form></div></div>
+<aside class="panel terminal-side"><div class="eyebrow">INTERACTIVE MODE</div><h3>Curiosity is a feature.</h3><p>Explore my background, skills, projects, and experience in a slightly different way. No command line experience required — just type <strong>help</strong>.</p><div class="mini-tags"><span class="tag">JavaScript</span><span class="tag">Interaction</span><span class="tag">Problem Solving</span></div></aside></div></div></section>
+
+</main>
+<footer class="footer"><div class="container footer-inner"><span>© <span id="year"></span> Sharmila A/P Murugan &nbsp;|&nbsp; Software Engineer</span><span> <span style="color:var(--pink)">♥</span> </span><div class="footer-links"><a href="#home">Ba</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div></div></footer>
+
+<div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="panel modal-box"><button class="modal-close" id="modalClose" aria-label="Close project details">✕</button><div class="eyebrow">PROJECT CASE STUDY</div><h3 id="modalTitle"></h3><p id="modalDescription"></p><div class="mini-tags" id="modalTags"></div><p id="modalExtra"></p><button class="btn btn-ghost" id="modalDone">Close details</button></div></div><div class="toast" id="toast" role="status"></div>
+<script>
+const skillContent={
+web:{title:"Web Development",desc:"Designing and building clear, responsive experiences with practical front-end and back-end technologies.",chips:["HTML5","CSS3","JavaScript","PHP","React","Node.js"],note:"✦ Interfaces that put people first."},
+programming:{title:"Programming",desc:"Using programming fundamentals and structured logic to create useful applications and solve practical problems.",chips:["C#","Java","JavaScript","Python"],note:"✦ Think clearly. Build deliberately."},
+database:{title:"Database & Data",desc:"Organising application data so records are structured, searchable, and easier to maintain.",chips:["SQLite","MySQL","Firebase","SQL","Data validation"],note:"✦ Reliable data supports reliable systems."},
+automation:{title:"Automation",desc:"Reducing repetitive work by connecting processes, extracting information, and creating repeatable workflows.",chips:["Power Automate","Excel automation","Workflow design","File processing"],note:"✦ Let systems handle repetitive tasks."},
+tools:{title:"Tools & Analytics",desc:"Using development and productivity tools to build, test, organise, and communicate technical work.",chips:["Visual Studio","VS Code","Git","GitHub","Figma","Power BI"],note:"✦ The right tool helps the right idea scale."},
+professional:{title:"Professional Skills",desc:"Working thoughtfully with people, learning independently, and communicating clearly when solving unfamiliar problems.",chips:["Communication","Teamwork","Adaptability","Continuous learning"],note:"✦ Good engineering is also good collaboration."}
+};
+document.querySelectorAll(".skill-cat").forEach(btn=>btn.addEventListener("click",()=>{document.querySelectorAll(".skill-cat").forEach(b=>b.classList.remove("active"));btn.classList.add("active");const s=skillContent[btn.dataset.skill];document.getElementById("skillDetail").innerHTML=`<div class="eyebrow">SELECTED DISCIPLINE</div><h3>${s.title}</h3><p>${s.desc}</p><div class="skill-chips">${s.chips.map(c=>`<span class="skill-chip">${c}</span>`).join("")}</div><div class="skill-note">${s.note}</div>`;}));
+const projects={
+powerbi:{title:"Power BI & Fabric Workspace Support",desc:"During the Bosch degree internship, helped resolve a Power BI license/capacity issue by moving the TEF7 workspace subscription to Fabric capacity.",tags:["Power BI","Microsoft Fabric","Workspace support"],extra:"This entry describes workspace support and issue resolution; it does not claim that a full dashboard was developed."},
+mjiit:{title:"MJIIT Academic Counter System",desc:"A desktop queue-management system developed using JavaFX and MySQL, structured around the Model–View–Controller (MVC) architecture.",tags:["JavaFX","MySQL","MVC"],extra:"The system was designed to improve the organisation of academic counter queues and office efficiency."},
+focusflow:{title:"Focus Flow — Study Productivity App",desc:"A Flutter and Firebase study app with a Pomodoro timer, to-do list, and deadline tracker to support student productivity.",tags:["Flutter","Firebase","Mobile development"],extra:"This project combines time management with task and deadline tracking."},
+learnloop:{title:"Learn Loop — Web-Based Pomodoro Study Platform",desc:"A web-based Pomodoro study platform built to help users manage study time and tasks effectively.",tags:["HTML","CSS","JavaScript","Firebase"],extra:"The project focuses on a simple browser-based study workflow and productivity support."},
+
+excel:{title:"Excel Automation System",desc:"A C# Windows Forms application built to reduce repetitive data entry from large TPCN buyoff and preprogramming folders. It stores extracted records in SQLite and supports structured review and Excel export.",tags:["C#","WinForms","SQLite","ClosedXML","iText 7"],extra:"Built with C# Windows Forms, SQLite, ClosedXML, and iText 7. Key features include periodic folder scanning, duplicate detection by document number, structured record review, Excel export, and extraction of useful data from text, PDF, and image files."},
+travel:{title:"Power Automate Travel Pre-Approval",desc:"A workflow that processes TEF Bot pre-approval emails, extracts key request details, and writes organised records into a shared table for departmental review.",tags:["Power Automate","SharePoint / Excel","Microsoft Teams"],extra:"The flow processes TEF Bot Sent Items messages with a Pre-Approval subject, extracts request fields, writes to a shared Excel/SharePoint table, and marks processed messages to reduce duplicate handling."},
+mrg:{title:"MRG Engineering Website",desc:"A corporate website project focused on presenting MRG Engineering's company information and services in a clear, professional digital experience.",tags:["HTML","CSS","JavaScript","PHP"],extra:"Final-year project focused on presenting MRG Engineering’s company information and services through a professional corporate website. Add final screenshots, implemented features, and test results here as evidence."},
+christmas:{title:"TEF Department Christmas Wishes Website",desc:"An internal festive website designed for a department display, encouraging colleagues to share wishes through an interactive experience.",tags:["HTML","CSS","JavaScript","PHP"],extra:"Created for a department display on a LattePanda-connected TV. Features include live comments, top-liked wishes, anonymous participation, and automatic refresh."}
+};
+function openProject(key){const p=projects[key];if(!p)return;document.getElementById("modalTitle").textContent=p.title;document.getElementById("modalDescription").textContent=p.desc;document.getElementById("modalExtra").textContent=p.extra;document.getElementById("modalTags").innerHTML=p.tags.map(t=>`<span class="tag">${t}</span>`).join("");document.getElementById("projectModal").classList.add("open");document.body.style.overflow="hidden";}
+document.querySelectorAll(".project-card").forEach(card=>{card.addEventListener("click",()=>openProject(card.dataset.project));card.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" ") {e.preventDefault();openProject(card.dataset.project)}})});
+function closeModal(){document.getElementById("projectModal").classList.remove("open");document.body.style.overflow=""}
+document.getElementById("modalClose").addEventListener("click",closeModal);document.getElementById("modalDone").addEventListener("click",closeModal);document.getElementById("projectModal").addEventListener("click",e=>{if(e.target.id==="projectModal")closeModal()});document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});
+const commands={
+help:"Available commands:<br><span class='cyan'>about</span> — Discover my background<br><span class='cyan'>skills</span> — Explore my technical skills<br><span class='cyan'>projects</span> — View my projects<br><span class='cyan'>experience</span> — Explore my industrial experience<br><span class='cyan'>education</span> — Learn about my education<br><span class='cyan'>contact</span> — Get my contact information<br><span class='cyan'>clear</span> — Clear the terminal",
+about:"I'm Sharmila, a Computer Science student specialising in Software Engineering, interested in web development, automation, and practical digital solutions.",
+skills:"Web: HTML, CSS, JavaScript, PHP<br>Programming: C#, Java<br>Data: SQLite, SQL<br>Automation: Power Automate, Excel automation<br>Tools: Visual Studio, VS Code, Power BI",
+projects:"Featured projects:<br>01 — Excel Automation System<br>02 — Power Automate Travel Pre-Approval<br>03 — MRG Engineering Website<br>04 — Christmas Wishes Website",
+experience:"Robert Bosch (M) Sdn. Bhd., Penang<br>Industrial Training: 22 Sep 2025 — 6 Feb 2026<br>Focus: software development, process automation, technical support.",
+education:"Bachelor of Computer Science (Software Engineering) with Honours — UTM, 2023–2026<br>Diploma in IT (Digital Technology), 2019–2023<br>Languages: English, Malay, Tamil",
+contact:"Email: sharmilamurugan08@gmail.com<br>Location: Malaysia<br>Use the contact form to prepare an email."
+};
+const terminalOutput=document.getElementById("terminalOutput"),terminalForm=document.getElementById("terminalForm"),terminalInput=document.getElementById("terminalInput");
+terminalForm.addEventListener("submit",e=>{e.preventDefault();const cmd=terminalInput.value.trim().toLowerCase();if(!cmd)return;const line=document.createElement("div");line.innerHTML=`<span class="green">sharmila@portfolio:~$</span> ${cmd.replace(/[<>&"]/g,c=>({"<":"&lt;",">":"&gt;","&":"&amp;",'"':"&quot;"}[c]))}`;terminalOutput.insertBefore(line,terminalForm);if(cmd==="clear"){[...terminalOutput.children].forEach(n=>{if(n!==terminalForm)n.remove()})}else{const response=document.createElement("div");response.style.margin="5px 0 12px";response.innerHTML=commands[cmd]||"Command not found. Type <span class='cyan'>help</span> to see available commands.";terminalOutput.insertBefore(response,terminalForm)}terminalInput.value="";terminalOutput.scrollTop=terminalOutput.scrollHeight});
+document.getElementById("menuBtn").addEventListener("click",()=>document.getElementById("navlinks").classList.toggle("open"));document.querySelectorAll(".navlinks a").forEach(a=>a.addEventListener("click",()=>document.getElementById("navlinks").classList.remove("open")));
+document.getElementById("year").textContent=new Date().getFullYear();
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("visible");observer.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+const sections=[...document.querySelectorAll("main section[id]")],navLinks=[...document.querySelectorAll(".navlinks a")];window.addEventListener("scroll",()=>{let current="home";sections.forEach(s=>{if(window.scrollY>=s.offsetTop-130)current=s.id});navLinks.forEach(a=>{a.classList.toggle("active",a.getAttribute("href")==="#"+current)})},{passive:true});
+</script>
+</body>
+</html>
